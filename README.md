@@ -87,3 +87,4 @@ Jekyll regenerates and builds the files in `docs` from the `.md` files when you 
 ## Misc
 
 The header, navbar, and footer templates are located in the `_includes` folder. All static resources (JavaScript, images, custom CSS) is located in the `static` folder. The `old_site` folder includes all the resources that was the original DSEP Modules website. Finally `Gemfile` and `Gemfile.lock` are simply there so that Jekyll can do its job.# connectorslibrary
+# connectorslibrary
