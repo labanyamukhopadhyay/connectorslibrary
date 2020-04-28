@@ -31,7 +31,7 @@ Note: Slight edit to check if repo.language is "Jupyer Notebook"
     results = [];
     for (j = 0, len = ref.length; j < len; j++) {
       repo = ref[j];
-      if ((!opts.forks && repo.fork) || (ref1 = repo.name.toLowerCase(), indexOf.call(siteRepoNames, ref1) >= 0) || !repo.description) {
+      if ((ref1 = repo.name.toLowerCase(), indexOf.call(siteRepoNames, ref1) >= 0) ) {
         continue;
       }
       if (made++ === limit) {
