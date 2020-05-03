@@ -39,7 +39,8 @@ Note: Slight edit to check if repo.language is "Jupyer Notebook"
 	  }
 	  if (repo.language != "Jupyter Notebook"){
 		  continue;
-	  }
+    }
+    
       results.push(make({
         parent: div,
         cls: 'gw-repo-outer',
@@ -74,9 +75,11 @@ Note: Slight edit to check if repo.language is "Jupyer Notebook"
               }), repo.language != null ? make({
                 cls: 'gw-lang',
                 text: repo.language
-              }) : void 0, make({
-                cls: 'gw-repo-desc',
-                text: repo.description
+              }) : void 0,  make({
+                
+                  cls: 'gw-repo-desc',
+                  text: repo.description 
+                
               })
             ]
           })
@@ -223,9 +226,11 @@ Note: Slight edit to check if repo.language is "Jupyer Notebook"
         case 'prevSib':
           v.parentNode.insertBefore(t, v.nextSibling);
           break;
-        case 'text':
+        case 'text': 
+          if (text(v) != null) {
           t.appendChild(text(v));
           break;
+          }
         case 'cls':
           t.className = v;
           break;
