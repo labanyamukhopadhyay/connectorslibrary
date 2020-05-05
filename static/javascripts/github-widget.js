@@ -1,7 +1,7 @@
 /**
 Copyright (c) 2011 - 2012 George MacKerron
 https://github.com/jawj/github-widget
-Released under the MIT licence: http://opensource.org/licenses/mit-license
+Released under the MIT  licence: http://opensource.org/licenses/mit-license
 
 Edited by Tony Zhao (2018)
 Note: Slight edit to check if repo.language is "Jupyer Notebook"
@@ -227,7 +227,7 @@ Note: Slight edit to check if repo.language is "Jupyer Notebook"
           v.parentNode.insertBefore(t, v.nextSibling);
           break;
         case 'text': 
-          if (text(v) != null) {
+          if (text(v) != null && v != null) {
           t.appendChild(text(v));
           break;
           }
